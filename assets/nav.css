@@ -1,36 +1,69 @@
 nav {
     background: var(--primary-color);
     display: flex;
-    margin-top: 0px;
-    height: 67px;
-}
-.Logo {
-display: flex;
-position: relative;
-justify-content: left;
-
-width: 80px;
-height: 80px;
-
-}
-
-nav a {
-    display: table-cell;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 85px;
+    width: 100%;
     position: relative;
-
-    padding-top: 20px;
-    padding-left: 115px;
-    font-family: 'Lily Script One';
-    font-size: 20px;
-    text-decoration: none;
-    color: var(--font-color1);
-}
-
-nav a img {
+  }
+  
+  .Logo {
     display: flex;
     position: relative;
-    margin-top: -30px;
-    padding-left: 180px;
-    height: 50px;
-    width: 100%;
-}
+    width: 100px;
+    height: 100px;
+  }
+  
+  .Navigation {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  nav a {
+    position: relative;
+    margin-right: 0px;
+    padding-left: 60px;
+    padding-top: 15px;
+    font-family: 'Lily Script One';
+    font-size: 30px;
+    text-align: justify;
+    text-decoration: none;
+    color: var(--font-color1);
+    z-index: 2; /* Ensure the links are displayed above the images */
+  }
+  
+  nav a:hover {
+    transform: translateY(-3px); /* Move o texto 3 pixels para cima */
+  }
+  .Images {
+    position: absolute;
+    right: 110px;
+    top: 0;
+    z-index: 1; /* Ensure the images are behind the links */
+  }
+  
+  .Images img {
+    display: inline-block;
+    margin-top: 17px;
+    margin-right: 190px;
+    padding-left: 10px;
+    height: 80px;
+  }
+  
+  #navline2 {
+    display: inline-block;
+    margin-right: 175px;
+  }
+  
+  #navline3 {
+    display: inline-block;
+    margin-right: 40px;
+  }
+  
+  
+  
+
+  
