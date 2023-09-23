@@ -1,0 +1,44 @@
+@import url('./background.css');
+@import url('./nav.css'); 
+@import url('./footer.css');
+@import url('./main.css');
+
+@font-face {
+    font-family: 'Lily Script One';
+    src: url(font/LilyScriptOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(font/Montserrat-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color:  #D49495;
+    --secundary-color: #C5585B;
+    --line-color: #C5585B;
+    --line-color2: #FFA6A8;
+    --foot-color: #442422;
+    --font-color1: #FFD3D3;
+    --font-color2: #FFA3A3;
+}
+
+body{
+    background-color: whitesmoke;
+
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1080vh;
+    overflow: hidden;
+    position: relative;
+    
+}

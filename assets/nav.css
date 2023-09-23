@@ -1,0 +1,33 @@
+nav {
+    background: var(--primary-color);
+    display: absolute;
+    align-items: start;
+    justify-content: space-around;
+    
+
+}
+.Logo {
+display: flex;
+justify-content: center;
+
+width: 80px;
+height: 80px;
+
+}
+
+nav a {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-content: space-between;
+    position: relative;
+    font-family: 'Lily Script One';
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--font-color1);
+}
+
+nav a img {
+    display: flex;
+  
+}

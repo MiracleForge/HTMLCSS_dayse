@@ -1,0 +1,69 @@
+main {
+    flex: 1;
+    background: whitesmoke;
+    inset: 0;
+    height: 100%;
+
+}
+/* A tend effect */
+#tendhate{
+    display: grid;
+    position: absolute;
+    
+}
+.tend {
+    padding-top: 13px;
+    background-color: var(--primary-color);
+    display: grid;
+    position: absolute;
+    height: 0;
+    z-index: 1;
+}
+
+#line2 {
+    padding-top: 5px;
+}
+/* end of tend */
+.secundary_nav {
+      
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    column-gap: 80px;
+    position: relative;
+    margin-top: 58px;
+    padding-top: 58px;
+    
+}
+
+.secundary_nav a {
+    text-decoration: none;
+    width: auto;
+    font-family: 'Lily Script One';
+    font-size: 35px;
+    color: var(--font-color2);
+   
+}
+.secundary_nav a:hover {
+    transform: translateY(-3px); /* Move o texto 3 pixels para cima */
+    text-decoration: underline;
+}
+.secundary_nav a img {
+    pointer-events: none;
+    position: absolute;
+    padding-left: 40px;
+    height: 50%;
+}
+
+#line_sec_nav2 {
+    padding-left: 41px;
+  
+}
+
+#banner {
+    margin-top: 58px;
+}
+/* Resto do seu CSS */
+
+
+/* Resto do seu CSS */
