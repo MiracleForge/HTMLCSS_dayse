@@ -25,24 +25,21 @@ main {
 }
 /* end of tend */
 .secundary_nav {
-      
+    display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
-    display: flex;
-    column-gap: 80px;
-    position: relative;
     margin-top: 58px;
     padding-top: 58px;
-    
+    column-gap: 80px;
 }
 
 .secundary_nav a {
-    text-decoration: none;
     width: auto;
+    text-decoration: none;
     font-family: 'Lily Script One';
     font-size: 35px;
     color: var(--font-color2);
-   
 }
 .secundary_nav a:hover {
     transform: translateY(-3px); /* Move o texto 3 pixels para cima */
@@ -63,7 +60,4 @@ main {
 #banner {
     margin-top: 58px;
 }
-/* Resto do seu CSS */
 
-
-/* Resto do seu CSS */
