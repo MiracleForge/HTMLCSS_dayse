@@ -3,14 +3,22 @@ main {
     background: whitesmoke;
     inset: 0;
     height: 100%;
-
+    background-image: 
+      url(./image/bicoito.png), /* Primeiro background */
+      url(./image/bicoito.png); /* Segundo background */
+    background-repeat: repeat-x, repeat-x;
+    background-size: 65px auto, 36px auto;
+    background-position-x: 0px, 0px; /* Ajuste o valor para aumentar o espaçamento */
+    background-position-y: 190px, 205px;
+    width: 100%; /* Largura do elemento para corresponder ao número de repetições desejado */
 }
+
 /* A tend effect */
 #tendhate{
     display: grid;
     position: absolute;
-    
 }
+
 .tend {
     padding-top: 13px;
     background-color: var(--primary-color);
@@ -58,6 +66,66 @@ main {
 }
 
 #banner {
-    margin-top: 58px;
+    display: grid;
+    margin-top: 4.6%;
+    border: 5px solid var(--primary-color);
+    border-bottom-width: 54px;
+    position: absolute; /* Defina a posição como absoluta para que o z-index funcione */
+    z-index: 0; /* Defina o z-index de banner como 0 (menor que os outros elementos) */
 }
+
+#maintend {
+    display: grid;
+    position: absolute;
+    z-index: 1; /* Defina o z-index de maintend como 1 (maior que banner) */
+    top: 12.7%; /* Posicione a partir do final de #banner */
+}
+
+#mainline1 {
+    display: grid;
+    position: absolute;
+    z-index: 2; /* Defina o z-index de mainline1 como 2 (maior que maintend) */
+    top: 12.8%; /* Posicione a partir do final de #banner */
+}
+
+#mainline2 {
+    display: grid;
+    position: absolute;
+    z-index: 3; /* Defina o z-index de mainline2 como 3 (maior que mainline1) */
+    top: 12.9%; /* Posicione a partir do final de #banner */
+}
+
+.Ribbon {
+    padding-top: 170px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; /* Para centralizar verticalmente o conteúdo dentro do Ribbon */
+    text-align: center; /* Centralizar o texto horizontalmente */
+}
+
+.Ribbon h1 {
+    z-index: 1;
+    position: relative;
+    padding-top: 150px;
+    font-family: 'Lily Script One';
+
+    font-size: 40px;
+    color: #FFFFFF;
+    /* Estilos específicos para o h1 dentro do Ribbon, se necessário */
+}
+
+.Ribbon img {
+    filter: saturate(200%); /* Ajuste o valor conforme necessário */
+    position: absolute;
+    z-index: 0;
+    padding-top: 300px;
+    height: 701px;
+    width: 1246px;
+}
+
+
+
 
