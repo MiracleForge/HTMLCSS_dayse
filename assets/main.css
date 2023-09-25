@@ -1,15 +1,15 @@
+
 main {
     flex: 1;
     background: whitesmoke;
     inset: 0;
-    height: 100%;
+
     background-image: 
-      url(./image/bicoito.png), /* Primeiro background */
-      url(./image/bicoito.png); /* Segundo background */
-    background-repeat: repeat-x, repeat-x;
-    background-size: 65px auto, 36px auto;
-    background-position-x: 0px, 0px; /* Ajuste o valor para aumentar o espaçamento */
-    background-position-y: 190px, 205px;
+      url(./image/biscoito\ barras.png); /* Primeiro background */
+    background-repeat: repeat-x;
+    background-size: 65px auto;
+    background-position-x: 0px; /* Ajuste o valor para aumentar o espaçamento */
+    background-position-y: 199px;
     width: 100%; /* Largura do elemento para corresponder ao número de repetições desejado */
 }
 
@@ -67,64 +67,140 @@ main {
 
 #banner {
     display: grid;
+    position: relative;
     margin-top: 4.6%;
+    background: var(--primary-color);
+}
+
+.image-container {
+    position: relative;
     border: 5px solid var(--primary-color);
     border-bottom-width: 54px;
-    position: absolute; /* Defina a posição como absoluta para que o z-index funcione */
-    z-index: 0; /* Defina o z-index de banner como 0 (menor que os outros elementos) */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    background: var(--primary-color);
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.657) 12.5%, rgba(0, 0, 0, 0.657) 75.79%, rgba(0, 0, 0, 0.65) 12%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.657) 12.5%, rgba(0, 0, 0, 0.657) 75.79%, rgba(0, 0, 0, 0.65) 12%);
 }
 
 #maintend {
     display: grid;
     position: absolute;
     z-index: 1; /* Defina o z-index de maintend como 1 (maior que banner) */
-    top: 12.7%; /* Posicione a partir do final de #banner */
+    top: 37.7%; /* Posicione a partir do final de #banner */
 }
 
 #mainline1 {
     display: grid;
     position: absolute;
     z-index: 2; /* Defina o z-index de mainline1 como 2 (maior que maintend) */
-    top: 12.8%; /* Posicione a partir do final de #banner */
+    top: 38.4%; /* Posicione a partir do final de #banner */
 }
 
 #mainline2 {
     display: grid;
     position: absolute;
     z-index: 3; /* Defina o z-index de mainline2 como 3 (maior que mainline1) */
-    top: 12.9%; /* Posicione a partir do final de #banner */
+    top: 38.9%; /* Posicione a partir do final de #banner */
 }
 
-.Ribbon {
-    padding-top: 170px;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column; /* Para centralizar verticalmente o conteúdo dentro do Ribbon */
-    text-align: center; /* Centralizar o texto horizontalmente */
-}
+.MostPopular {
 
-.Ribbon h1 {
-    z-index: 1;
     position: relative;
-    padding-top: 150px;
-    font-family: 'Lily Script One';
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 8%;
 
+}
+
+.displayPopular {
+    margin-top: 22vh;
+    background-image: url(./image/biscoito\ barras.png); 
+    background-image: url(./image/biscoito\ barras.png); 
+    background-size: 205px;
+    background-repeat: repeat;
+    z-index: 1;
+    width: 100%;
+    height: 50%;
+}
+
+.MostPopular h1 {
+    position: absolute;
+    margin-top: 4%;
+    left: 50%; /* Alinhe o lado esquerdo do h1 no meio horizontal */
+    transform: translateX(-50%); /* Centralize o h1 horizontalmente */
+    z-index: 1;
+    font-family: 'Lily Script One';
     font-size: 40px;
     color: #FFFFFF;
-    /* Estilos específicos para o h1 dentro do Ribbon, se necessário */
+}
+#ribbonid {
+    position: absolute;
+    top: 42%;
+ 
+}
+.MostPopular img {
+    filter: saturate(200%);
+    position: relative;
+    top: 3.32%; /* Alinhe o topo da imagem no meio vertical */
+    left: 50%; /* Alinhe o lado esquerdo da imagem no meio horizontal */
+    transform: translate(-50%, -50%); /* Centralize a imagem vertical e horizontalmente */
+    z-index: 0;
+    height: 100;
+    width: 100%;
+    
 }
 
-.Ribbon img {
-    filter: saturate(200%); /* Ajuste o valor conforme necessário */
-    position: absolute;
-    z-index: 0;
-    padding-top: 300px;
-    height: 701px;
-    width: 1246px;
+/* PRODUTOS */
+.productpopular {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+
+    margin: 0 10px; /* Adicione margem à esquerda e à direita para criar espaço entre as imagens */
 }
+
+.productpopular .produto {
+    padding-top: 30%;
+    display: inline-block;
+    margin: 0 50px; /* Adicione margem à esquerda e à direita para criar espaço entre as imagens */
+    width: 304px;
+    height: 304px; /* Ajuste a altura desejada aqui */
+    text-align: center;
+}
+
+
+.productpopular .produto-imagem {
+    width: 100%;
+    height: 304px;
+    object-fit: cover; /* Redimensiona a imagem mantendo a proporção e preenchendo o contêiner */
+}
+
+
+.productpopular .produto-nome,
+.productpopular .produto-valor {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

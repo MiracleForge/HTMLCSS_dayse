@@ -9,8 +9,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
     <link rel="stylesheet" href="assets/style.css"/>
-    <script src="assets/main.js"></script>
-    <link rel="icon" href="assets/image/BOLIN FDS.png">
+    <link rel="icon" href="./assets/image/BOLINHO BRABO 64X64.png">
 </head>
 <body>
     <div class="app">
@@ -23,10 +22,10 @@
               <img src="./assets/image/Logo Sabor de Mainha.png">
             </div>
             <div class="Navigation">
-              <a href="#">Início</a>
-              <a href="#">Encomenda</a>
-              <a href="#">Sobre Nós</a>
-              <a href="#">Contato</a>
+              <a href="./index.html">Início</a>
+              <a href="./Emconstrucao.html">Encomenda</a>
+              <a href="./Emconstrucao.html">Sobre Nós</a>
+              <a href="./Emconstrucao.html">Contato</a>
             </div>
             <div class="Images">
               <img  src="./assets/image/img_navegation_line.png">
@@ -53,23 +52,28 @@
                 <a href="#">Produtos</a>
             </div>
             <div class="tend_main">
-                <img id="banner" src="./assets/image/img_banner_food.png" alt="salt snacs">
+                <div id="banner">
+                    <div class="image-container">
+                      <img src="./assets/image/img_banner_food.png" alt="salt snacs">
+                    </div>
+                  </div>
+                  
                 <img id="maintend" src="./assets/image/img_tend.png">
                 <img id="mainline1" src="./assets/image/imp_main_fit_line.png">
                 <img id="mainline2" src="./assets/image/img_main_line.png">
             </div>
 
-            <div class="menu">
-                <img id="big_cookie" src="./assets/image/bicoito.png" alt="background big cookie">
-                <div class="Ribbon" >
-                    <h1>Produtos</h1>
-                    <img src="./assets/image/ribbon.png" alt="Ribbon">
-                </div>
-                <div class="Catalogue">
-
+            <div class="MostPopular" >
+                <div class="displayPopular" >
+                <h1>Produtos</h1>
+                
+                <img id="ribbonid" src="./assets/image/ribbon.png" alt="Ribbon">
+                <div class="productpopular" >
+                    <div id="listaProdutos"></div>
+                
                 </div>
             </div>
-
+            </div>
 
         </main>
 
@@ -106,4 +110,6 @@
     </div>
     
 </body>
+<script src="assets/main.js"></script>
+
 </html>
