@@ -1,94 +1,102 @@
 
-/* Estilo para as imagens nas redes sociais */
-#instagram img {
-
-    width: 23px; /* Largura desejada para a imagem do Instagram */
-    height: 23px; /* Mantém a proporção original */
-    align-items: end;
-    
-    /* Outros estilos desejados para a imagem do Instagram */
-}
-
-#whatsapp img {
-    width: 23px; /* Largura desejada para a imagem do WhatsApp */
-    height: 23px; /* Mantém a proporção original */
-    
-    /* Outros estilos desejados para a imagem do WhatsApp */
-}
-
-
 footer {
     display: flex;
     justify-content: space-between;
     position: relative;
     width: 100%;
-    height: 111px;
-    bottom: 0;
+    height: 20vh;
     background-color: var(--foot-color);
     font-family: 'Lily Script One';
-    padding-top: 17px;
+}
 
+#instagram img,
+#whatsapp img {
+    display: flex;
+    height: 4.5vh;
+    margin-right: 5vh;
 }
 
 #direitos {
     position: absolute;
-    font: 15px;
-    margin-left: 20px;
+    top: 50%;
+    font-size: 3vh;
+    margin-left: 10vh;
     font-family: 'Montserrat';
-    color: #ffffff; /* Cor do texto desejada */
-    /* Outros estilos desejados */
+    color: #ffffff;
+    transform: translateY(-50%);
+    left: 0; /* Ajustado para a esquerda */
+    z-index: 1;
 }
 
-#Elements {
+#direitos a {
+    display: block;
+    margin-top: 1vh;
+    color: #FFFFFF;
+    font-size: 70%;
+}
+
+
+#footerline {
+    background-color: #C5585B;
+    box-shadow: inset;
     position: absolute;
-    height: 90px;
-    margin-left: 990px;
-    top: 20%;
+    top: 0;
+    max-width: 100%;
+    height: 10%;
+    width: 100%;
 }
 
 #footer_social_media {
     display: flex;
     position: relative;
-    height: 100%;
-    margin-left: 1075px;
-    gap: 50px;
-    top: 40%;
-}
-
-#footer_social_media a {
-    display: inline-block; /* Garante que a âncora tenha a largura e altura da imagem */
-    font-size: 22px;
-    text-decoration: none;
-    color: var(--font-color1);
-
+    max-width: 100%;
+    width: 14vh;
+    margin-left: 188vh;
+    top: 60%;
+    z-index: 1;
 }
 
 footer h1 {
     position: absolute;
-    max-width: auto;
-    margin-left: 1060px;
-    font-size: 22px;
+    top: 20%;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 87%;
     color: var(--font-color1);
+    font-size: 4vh;
 }
 
 #footer_contacts {
     position: absolute;
-    margin-left: 800px;
+    top: 20%;
+    max-width: 100%;
+    width: 100%;
+    margin-left: 65%;
     font-family: 'Montserrat';
     font-size: 10px;
     color: #ffffff;
+    padding-left: 2vh;
 }
+
+#Elements {
+    margin-left: 177vh;
+    vertical-align: middle;
+}
+
 footer h2 {
-    font-size: 22px;
+    font-size: 4vh;
+    margin-left: 5vh;
     font-family: 'Lily Script One';
 }
 
 footer h3 {
     top: 40%;
-    margin-left: -20px;
+    font-size: 2vh;
+    margin-left: 1vh;
 }
 
 footer h4 {
-    margin-top: 10px;
+    margin-top: 2vh;
+    font-size: 2vh;
+    margin-left: 4vh;
 }
-

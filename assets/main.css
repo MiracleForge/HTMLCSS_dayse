@@ -3,14 +3,15 @@ main {
     flex: 1;
     background: whitesmoke;
     inset: 0;
-
+    
     background-image: 
       url(./image/biscoito\ barras.png); /* Primeiro background */
     background-repeat: repeat-x;
     background-size: 65px auto;
     background-position-x: 0px; /* Ajuste o valor para aumentar o espaçamento */
     background-position-y: 199px;
-    width: 100%; /* Largura do elemento para corresponder ao número de repetições desejado */
+    max-width: 100%;
+    height: auto;
 }
 
 /* A tend effect */
