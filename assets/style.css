@@ -39,6 +39,25 @@ body{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    position: relative;
-    
+    position: relative; 
+}
+
+.LOGOConstrução {
+    text-align: center;
+    height: 100vh;
+    margin-top: 0px; /* Ajuste a margem superior conforme necessário */
+    overflow: hidden;
+    height: cover;
+    background-color: var(--secundary-color);
+}
+
+.LOGOConstrução h1 {
+    font-family: 'Lily Script One';
+    color: #FFFFFF;
+}
+
+.LOGOConstrução img 
+{
+    height: 80%;
+ 
 }

@@ -48,6 +48,10 @@ const produtos = [
 exibirProdutos();
 console.log('Função exibirProdutos foi chamada.');
 
+// Aguarda 60 segundos (60000 milissegundos) e redireciona para index.html
+setTimeout(function() {
+  window.location.href = 'index.html';
+}, 60000);
 
   
   
