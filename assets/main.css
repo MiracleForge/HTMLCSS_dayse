@@ -7,30 +7,54 @@ main {
     background-image: 
       url(./image/biscoito\ barras.png); /* Primeiro background */
     background-repeat: repeat-x;
-    background-size: 65px auto;
+    background-size: 11vh auto;
     background-position-x: 0px; /* Ajuste o valor para aumentar o espaçamento */
-    background-position-y: 199px;
-    max-width: 100%;
-    height: auto;
+    background-position-y: 34vh;
+    
 }
 
 /* A tend effect */
 #tendhate{
     display: grid;
     position: absolute;
+    height: 11vh;
+    width: 150%;
+    
 }
 
 .tend {
-    padding-top: 13px;
+    padding-top: 2vh;
     background-color: var(--primary-color);
     display: grid;
     position: absolute;
-    height: 0;
-    z-index: 1;
+    z-index: 1;  
+    width: 100vw;
 }
 
+.secundary_nav a img {
+    pointer-events: none;
+    position: absolute;
+    padding-left: 407vw;
+
+}
+
+#line_sec_nav2 {
+    top: 8vh;
+    padding-left: 7vh;
+    height: 13vh;
+
+
+  
+}
 #line2 {
-    padding-top: 5px;
+
+    width: 100vw;
+    padding-top: 1vh;
+
+}
+#line1 {
+    width: 100vw;
+    padding-top: 1vh;
 }
 /* end of tend */
 .secundary_nav {
@@ -38,33 +62,23 @@ main {
     position: relative;
     align-items: center;
     justify-content: center;
-    margin-top: 58px;
-    padding-top: 58px;
-    column-gap: 80px;
+    margin-top: 9.9vh;
+    padding-top: 10vh;
+    column-gap: 6vw;
 }
 
 .secundary_nav a {
     width: auto;
     text-decoration: none;
     font-family: 'Lily Script One';
-    font-size: 35px;
+    font-size: 6vh;
     color: var(--font-color2);
 }
 .secundary_nav a:hover {
-    transform: translateY(-3px); /* Move o texto 3 pixels para cima */
+    transform: translateY(-0.5vh); /* Move o texto 3 pixels para cima */
     text-decoration: underline;
 }
-.secundary_nav a img {
-    pointer-events: none;
-    position: absolute;
-    padding-left: 40px;
-    height: 50%;
-}
 
-#line_sec_nav2 {
-    padding-left: 41px;
-  
-}
 
 #banner {
     display: grid;
@@ -75,37 +89,43 @@ main {
 
 .image-container {
     position: relative;
-    border: 5px solid var(--primary-color);
-    border-bottom-width: 54px;
+    border: 1vh solid var(--primary-color);
+    border-bottom-width: 11vh;
 }
 
 .image-container img {
     width: 100%;
-    height: auto;
+    height: cover;
     background: var(--primary-color);
     mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.657) 12.5%, rgba(0, 0, 0, 0.657) 75.79%, rgba(0, 0, 0, 0.65) 12%);
     -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.657) 12.5%, rgba(0, 0, 0, 0.657) 75.79%, rgba(0, 0, 0, 0.65) 12%);
 }
 
 #maintend {
+    width: 100%;
     display: grid;
     position: absolute;
     z-index: 1; /* Defina o z-index de maintend como 1 (maior que banner) */
-    top: 37.7%; /* Posicione a partir do final de #banner */
+    top: 116vh; /* Posicione a partir do final de #banner */
 }
 
 #mainline1 {
     display: grid;
     position: absolute;
     z-index: 2; /* Defina o z-index de mainline1 como 2 (maior que maintend) */
-    top: 38.4%; /* Posicione a partir do final de #banner */
+    top: 115vh;
+    height: 0.5vh;
+    width: 100%;
 }
 
 #mainline2 {
+    width: 100%;
+    height: 0.8%;
+
     display: grid;
     position: absolute;
     z-index: 3; /* Defina o z-index de mainline2 como 3 (maior que mainline1) */
-    top: 38.9%; /* Posicione a partir do final de #banner */
+    top: 116vh; /* Posicione a partir do final de #banner */
 }
 
 .MostPopular {
@@ -123,11 +143,12 @@ main {
     margin-top: 22vh;
     background-image: url(./image/biscoito\ barras.png); 
     background-image: url(./image/biscoito\ barras.png); 
-    background-size: 205px;
+    background-size: 35vh;
     background-repeat: repeat;
     z-index: 1;
     width: 100%;
-    height: 50%;
+
+  
 }
 
 .MostPopular h1 {
@@ -137,22 +158,19 @@ main {
     transform: translateX(-50%); /* Centralize o h1 horizontalmente */
     z-index: 1;
     font-family: 'Lily Script One';
-    font-size: 40px;
+    font-size: 8vh;
     color: #FFFFFF;
 }
 #ribbonid {
     position: absolute;
-    top: 42%;
+    top: 58vh;
  
 }
 .MostPopular img {
     filter: saturate(200%);
     position: relative;
-    top: 3.32%; /* Alinhe o topo da imagem no meio vertical */
-    left: 50%; /* Alinhe o lado esquerdo da imagem no meio horizontal */
     transform: translate(-50%, -50%); /* Centralize a imagem vertical e horizontalmente */
     z-index: 0;
-    height: 100;
     width: 100%;
     
 }
@@ -161,26 +179,25 @@ main {
 .productpopular {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
 
-    margin: 0 10px; /* Adicione margem à esquerda e à direita para criar espaço entre as imagens */
+   
 }
 
 .productpopular .produto {
-    padding-top: 30%;
+    margin-right: 10vh; /* Aumente a margem à direita para criar mais espaço entre as imagens */
+    margin-left: 10vh; /* Mantenha a margem à esquerda */
+    padding-top: 60vh;
     display: inline-block;
-    margin: 0 50px; /* Adicione margem à esquerda e à direita para criar espaço entre as imagens */
-    width: 304px;
-    height: 304px; /* Ajuste a altura desejada aqui */
-    text-align: center;
 }
 
 
+
 .productpopular .produto-imagem {
-    width: 100%;
-    height: 304px;
-    object-fit: cover; /* Redimensiona a imagem mantendo a proporção e preenchendo o contêiner */
+    
+    width: 40vh;
+    left: 17vw;
+
+    height: 100%;
 }
 
 
@@ -188,6 +205,8 @@ main {
 .productpopular .produto-valor {
     display: none;
 }
+
+
 
 
 

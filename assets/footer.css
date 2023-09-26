@@ -101,39 +101,4 @@ footer h4 {
     margin-left: 4vh;
 }
 
-@media (max-width: 768px) {
-    footer {
-        flex-direction: column;
-        height: auto;
-    }
-
-    #instagram img,
-    #whatsapp img {
-        margin-right: 0;
-        margin-bottom: 1vh;
-    }
-
-    #direitos {
-        position: static;
-        text-align: center;
-        margin-left: 0;
-    }
-
-    #direitos a {
-        margin-top: 1vh;
-    }
-
-    #footerline,
-    #footer_social_media {
-        margin-left: 0;
-        text-align: center;
-    }
-
-    footer h1,
-    footer h2,
-    footer h3,
-    footer h4 {
-        margin: 0;
-    }
-}
 
