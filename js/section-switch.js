@@ -4,7 +4,7 @@ import Orçamento from "../pages/Orçamento/orcamento.js";
 import SobreNós from "../pages/SobreNos/sobrenos.js";
 
 const main = document.querySelector("#dynamic-main");
-const removenav = document.querySelector(".secundary_nav"); // Corrija a seleção da classe secundary_nav // construção page
+const removenav = document.querySelector(".secundary_nav"); 
 
 const init = () => {
     window.addEventListener("hashchange", () => {

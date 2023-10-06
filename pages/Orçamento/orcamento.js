@@ -4,7 +4,7 @@ export default () => {
     const template = `
     <div class = "Emconstrucao">
         <h1>Página em Construção</h1>
-        <img src="../Assets/src/image/navi/Logo Sabor de Mainha.png" alt="Página Em Construção">
+        <img src="./Assets/src/image/navi/Logo Sabor de Mainha.png" alt="Página Em Construção">
     </div>
         `
     container.innerHTML = template;

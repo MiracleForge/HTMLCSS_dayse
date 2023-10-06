@@ -5,13 +5,13 @@ export default () => {
     const template = `
                 <section class="banner">
                 <div class="banner_img">
-                    <img src="../Assets/src/image/main/banner.png" alt="">
+                    <img src="./Assets/src/image/main/banner.png" alt="">
                     <div class="background-banner"></div>
                 </div>
                 <div class="toldo-set">
-                    <img id="line1" src="../Assets/src/image/geral/separador horizontal 2.png" alt="Line2">
-                    <img id="line2" src="../Assets/src/image/geral/separador horizontal.png" alt="Line1">
-                    <img id="toldo" src="../Assets/src/image/geral/toldo.png" alt="toldo">
+                    <img id="line1" src="./Assets/src/image/geral/separador horizontal 2.png" alt="Line2">
+                    <img id="line2" src="./Assets/src/image/geral/separador horizontal.png" alt="Line1">
+                    <img id="toldo" src="./Assets/src/image/geral/toldo.png" alt="toldo">
                 </div>
             </section>
             <section class="mais_procurados">
@@ -23,7 +23,7 @@ export default () => {
                     <div class="line5"></div>
                 </div>
                 <div class="ribbon">
-                    <img src="../Assets/src/image/main/ribbon.png" alt="">
+                    <img src="./Assets/src/image/main/ribbon.png" alt="">
                     <h1>Mais Procurados</h1>
                 </div>
 
@@ -37,7 +37,7 @@ export default () => {
 
     // Inclua um elemento de script para carregar o main.js
     const script = document.createElement('script');
-    script.src = '../js/main.js'; // Substitua pelo caminho correto para o main.js
+    script.src = './js/main.js'; // Substitua pelo caminho correto para o main.js
     document.body.appendChild(script);
 
     // Após criar a estrutura de elementos e inserir no container

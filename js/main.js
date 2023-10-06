@@ -2,50 +2,50 @@
  produtos = [
     {
       nome: 'Beijinho',
-      imagem: '../Assets/src/image/main/produtos/beijinho.png',
-      display: '../Assets/src/image/main/rectangle product.png',
+      imagem: './Assets/src/image/main/produtos/beijinho.png',
+      display: './Assets/src/image/main/rectangle product.png',
       valor: 19.99
     },
     {
       nome: 'Boliviano',
-      imagem: '../Assets/src/image/main/produtos/boliviano.png',
-      display: '../Assets/src/image/main/rectangle product.png',
+      imagem: './Assets/src/image/main/produtos/boliviano.png',
+      display: './Assets/src/image/main/rectangle product.png',
       valor: 9.99
     },
     {
       nome: 'Pastel de Belém',
-      imagem: '../Assets/src/image/main/produtos/pastel doce.png',
-      display: '../Assets/src/image/main/rectangle product.png',
+      imagem: './Assets/src/image/main/produtos/pastel doce.png',
+      display: './Assets/src/image/main/rectangle product.png',
       valor: 39.99
     },
     {
         nome: 'Coxinha',
-        imagem: '../Assets/src/image/main/produtos/beijinho.png',
-        display: '../Assets/src/image/main/rectangle product.png',
+        imagem: './Assets/src/image/main/produtos/beijinho.png',
+        display: './Assets/src/image/main/rectangle product.png',
         valor: 19.99
       },
       {
         nome: 'Kibe',
-        imagem: '../Assets/src/image/main/produtos/boliviano.png',
-        display: '../Assets/src/image/main/rectangle product.png',
+        imagem: './Assets/src/image/main/produtos/boliviano.png',
+        display: './Assets/src/image/main/rectangle product.png',
         valor: 9.99
       },
       {
         nome: 'Pão Delícia',
-        imagem: '../Assets/src/image/main/produtos/pastel doce.png',
-        display: '../Assets/src/image/main/rectangle product.png',
+        imagem: './Assets/src/image/main/produtos/pastel doce.png',
+        display: './Assets/src/image/main/rectangle product.png',
         valor: 39.99
       },
       {
         nome: 'Kibe',
-        imagem: '../Assets/src/image/main/produtos/boliviano.png',
-        display: '../Assets/src/image/main/rectangle product.png',
+        imagem: './Assets/src/image/main/produtos/boliviano.png',
+        display: './Assets/src/image/main/rectangle product.png',
         valor: 9.99
       },
       {
         nome: 'Pão Delícia',
-        imagem: '../Assets/src/image/main/produtos/pastel doce.png',
-        display: '../Assets/src/image/main/rectangle product.png',
+        imagem: './Assets/src/image/main/produtos/pastel doce.png',
+        display: './Assets/src/image/main/rectangle product.png',
         valor: 39.99
       }
     // Adicione mais produtos conforme necessário
