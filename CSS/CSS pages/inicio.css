@@ -9,13 +9,23 @@
 
 }
 
-.banner_img img {
+.banner_img {
     margin-top: 1.8%;
     position: relative;
     border: 1vh solid var(--primary-color);
     border-bottom-width: 8vh;
     background-color: var(--primary-color);
+    overflow: hidden; 
+}
 
+.banner_img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.54));
 }
 
 .banner .toldo-set {
@@ -39,9 +49,7 @@
     bottom: 0;
     left: 0;
     display: flex;
-    /* Torna o .Background um contêiner flex */
     flex-direction: column;
-    /* Os filhos serão empilhados verticalmente */
 }
 
 .line1,
@@ -105,23 +113,32 @@
 }
 
 .produto-imagem {
+    position: relative;
+    width: 62%;
+    border-radius: 40px;
     margin-left: 10%;
     margin-bottom: 10%;
-    width: 62%;
+    border: 2px solid transparent;
+    transition: all 1.5s;
 }
 
 .produto-imagem:hover {
     cursor: pointer;
+    position: relative;
+    border-radius: 100px;
+    box-shadow: 0 0 0 2px rgba(212, 148, 149, 0.4); 
+    background-color: rgba(212, 148, 149, 0.4);
+    transition: all 1.5s;
+    transform: scale(1.2);
 }
 
-.produto-nome {
-    display: none;
+#listaProdutos .produto-imagem:not(:hover) {
+    transform: scale(1);
+    transition: all 1.5s;
 }
 
-.produto-valor {
-    display: none;
-}
 
-.produto-display {
+.produto-nome,
+.produto-valor,.produto-display {
     display: none;
 }

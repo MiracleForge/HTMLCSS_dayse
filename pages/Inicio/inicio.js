@@ -3,7 +3,7 @@ export default () => {
     const container = document.createElement('div');
 
     const template = `
-                <section class="banner">
+            <section class="banner">
                 <div class="banner_img">
                     <img src="./Assets/src/image/main/banner.png" alt="">
                     <div class="background-banner"></div>
@@ -37,7 +37,7 @@ export default () => {
 
     // Inclua um elemento de script para carregar o main.js
     const script = document.createElement('script');
-    script.src = './js/main.js'; // Substitua pelo caminho correto para o main.js
+    script.src = './js/main.js';
     document.body.appendChild(script);
 
     // Após criar a estrutura de elementos e inserir no container

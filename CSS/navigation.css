@@ -36,10 +36,6 @@ nav {
     font-size: clamp(8px, 2vw, 36px);
 }
 
-.navigation li:hover {
-    transform: translateY(-0.3vh);
-}
-
 .separador img {
     width: 20%;
     height: 25%;
@@ -112,8 +108,16 @@ nav {
     font-size: clamp(8px, 4vw, 23px);
 }
 
+.navigation li:hover,
 .secundary_nav li:hover {
     transform: translateY(-0.3vh);
+    transition: all 1.2s;
+}
+
+.navigation li:not(:hover),
+.secundary_nav li:not(:hover) {
+
+    transition: all 1.2s;
 }
 
 #secundary_separador {
