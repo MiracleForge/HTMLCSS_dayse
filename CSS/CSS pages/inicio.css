@@ -1,0 +1,127 @@
+.banner {
+    margin-top: 9%;
+    position: inherit;
+    display: flex;
+    background-image: url(../../Assets/src/image/main/cookie\ bg.png);
+    background-size: 11vh auto;
+    background-position-x: 0px;
+    background-repeat: repeat-x;
+
+}
+
+.banner_img img {
+    margin-top: 1.8%;
+    position: relative;
+    border: 1vh solid var(--primary-color);
+    border-bottom-width: 8vh;
+    background-color: var(--primary-color);
+
+}
+
+.banner .toldo-set {
+    top: 36%;
+    position: absolute;
+}
+
+.mais_procurados {
+    display: grid;
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    height: 100vh;
+}
+
+.Background {
+    opacity: 40%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    /* Torna o .Background um contêiner flex */
+    flex-direction: column;
+    /* Os filhos serão empilhados verticalmente */
+}
+
+.line1,
+.line3,
+.line5 {
+    flex: 1;
+    background-image: url(../../Assets/src/image/main/cookie\ bg.png);
+    background-size: 14%;
+    background-position: 23.5%;
+}
+
+.line2,
+.line4 {
+    flex: 1;
+    background-image: url(../../Assets/src/image/main/cookie\ bg.png);
+    background-size: 14%;
+    background-position: 32%;
+}
+
+.ribbon {
+    display: flex;
+    width: 100%;
+    margin-bottom: 37%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ribbon h1 {
+    position: absolute;
+    font-family: 'Lily Script One';
+    color: white;
+    margin-top: 1%;
+}
+
+.ribbon img {
+    margin-right: 7%;
+    filter: saturate(200%);
+    height: 16vh;
+}
+
+.productpopular {
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: end;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+#listaProdutos {
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-top: 10%;
+    height: auto;
+    width: 100%;
+}
+
+.produto-imagem {
+    margin-left: 10%;
+    margin-bottom: 10%;
+    width: 62%;
+}
+
+.produto-imagem:hover {
+    cursor: pointer;
+}
+
+.produto-nome {
+    display: none;
+}
+
+.produto-valor {
+    display: none;
+}
+
+.produto-display {
+    display: none;
+}

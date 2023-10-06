@@ -1,0 +1,93 @@
+footer {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    height: 6vh;
+    background-color: var(--foot-color);
+}
+
+#divisor_footer {
+    box-shadow: initial;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+
+}
+
+.Direitos {
+    width: 70%;
+    font-family: 'Montserrat', regular;
+    font-size: clamp(8px, 2vw, 10px);
+
+}
+
+.Direitos h4,
+.Direitos a {
+    color: white;
+    margin-top: 1.5%;
+}
+
+.social_footer {
+    width: 13%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--font-color1);
+  
+  }
+  
+  .social-links {
+    display: flex; 
+    gap: 55px; 
+    align-items: center; 
+    list-style: none;
+    margin-right: 13%; 
+}
+  
+  .social-links a {
+    display: inline-block; 
+    position: absolute;
+    height: 100%; 
+
+}
+
+.social-links img {
+    height: 30%;
+}
+
+#footer_separador {
+    height: 50%;
+
+}
+.Atendimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    color: white;
+}
+
+.Atendimento h1,
+.social_footer h1 {
+    font-size: clamp(8px, 5vh, 22px);
+    font-family: 'Lily Script One';
+}
+
+.Atendimento p {
+    font-size: clamp(8px, 5vh, 8px);
+    font-family: 'Montserrat';
+}
+
+#footer_separador {
+    height: 50px; /* Change the height to your desired value */
+    width: auto;  /* You can set a specific width if needed */
+}
+
+
+
