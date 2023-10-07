@@ -93,7 +93,12 @@
     exibirProdutos();
 
   
-  
+    const menuCake = document.querySelector(".gg-menu-cake")
+    const navLinks = document.querySelector(".navigation")
+
+    menuCake.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
   
   
   
