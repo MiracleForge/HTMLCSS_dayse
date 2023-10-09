@@ -107,7 +107,7 @@
     position: absolute;
     flex-wrap: wrap;
     justify-content: flex-end;
-    margin-top: 10%;
+    margin-top: 12%;
     height: auto;
     width: 100%;
 }
@@ -118,7 +118,7 @@
     border-radius: 40px;
     margin-left: 10%;
     margin-bottom: 10%;
-    border: 2px solid transparent;
+    
     transition: all 1.5s;
 }
 
@@ -126,8 +126,8 @@
     cursor: pointer;
     position: relative;
     border-radius: 100px;
-    box-shadow: 0 0 0 2px rgba(212, 148, 149, 0.4); 
-    background-color: rgba(212, 148, 149, 0.4);
+    box-shadow: 0 0 0 2px rgba(212, 148, 149, 0.6); 
+    background-color: rgba(212, 148, 149, 0.6);
     transition: all 1.5s;
     transform: scale(1.2);
 }
@@ -135,6 +135,7 @@
 #listaProdutos .produto-imagem:not(:hover) {
     transform: scale(1);
     transition: all 1.5s;
+    
 }
 
 
