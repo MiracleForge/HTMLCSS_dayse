@@ -7,23 +7,29 @@ navLinks.classList.toggle('mobile-menu')
 })
 
 
-// Carrega os arquivos no json 
-  async function carregarmaisprocurados() {
-    console.log('carregando json');
-    try {
+// Carrega os arquivos no JSON e seleciona os 8 produtos mais clicados
+async function carregarmaisprocurados() {
+  console.log('carregando json');
+  try {
       const response = await fetch('./data/produtos.json');
-        if (!response.ok) {
-          throw new error('Falhar ao carregar produtos');
-        }
+      if (!response.ok) {
+          throw new Error('Falha ao carregar produtos');
+      }
 
-        const data = await response.json();
+      const data = await response.json();
 
-        return data;
+      // Classifica os produtos com base na quantidade de cliques em ordem decrescente
+      data.sort((produtoA, produtoB) => produtoB.cliques - produtoA.cliques);
 
-    } catch (error) {
+      // Seleciona os 8 primeiros produtos na classificação (os mais clicados)
+      const produtosMaisClicados = data.slice(0, 8);
+
+      return produtosMaisClicados;
+  } catch (error) {
       console.error(error);
-    }
   }
+}
+
 
 //exibir os mais procurados dos produtos
 export async function exibirmaisprocurados () {

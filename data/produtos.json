@@ -62,5 +62,21 @@
         "tipo": "Pães",
         "valor": 39.99,
         "cliques": 0
+    },
+    {
+        "nome": "Bazinga",
+        "imagem": "./Assets/src/image/main/produtos/boliviano.png",
+        "display": "./Assets/src/image/main/rectangle product.png",
+        "tipo": "Salgados",
+        "valor": 9.99,
+        "cliques": 0
+    },
+    {
+        "nome": "Morin",
+        "imagem": "./Assets/src/image/main/produtos/pastel doce.png",
+        "display": "./Assets/src/image/main/rectangle product.png",
+        "tipo": "Pães",
+        "valor": 39.99,
+        "cliques": 0
     }
 ]
