@@ -1,10 +1,13 @@
 // NAVIGATION CONTROL
-const menuCake = document.querySelector(".gg-menu-cake")
-const navLinks = document.querySelector(".navigation")
+const menuCake = document.querySelector(".gg-menu-cake");
+const navLinks = document.querySelector(".navigation");
+//Most popular
 
 menuCake.addEventListener('click',()=>{
 navLinks.classList.toggle('mobile-menu')
-})
+});
+
+
 
 
 // Carrega os arquivos no JSON e seleciona os 8 produtos mais clicados
@@ -68,6 +71,7 @@ export async function exibirmaisprocurados () {
     produtoDiv.appendChild(display);
 
     listaprocuradosDiv.appendChild(produtoDiv);
+
 });
 }
 

@@ -192,11 +192,12 @@ nav .gg-menu-cake {
         border-bottom: 1px solid var(--secundary-color);
     }
 
-    .navigation .gg-menu-cake {
+    .navigation .gg-menu-cake{
         color: var(--secundary-color);
         left: 6.2%;
         display: block;
     }
+ 
     .mobile-menu .gg-menu-cake::after {
         display: none;
     }
@@ -235,25 +236,24 @@ nav .gg-menu-cake {
         transform: translateY(0vh);
     }
     
-    .banner img {
-        display: none;
+    .toldo-set {
+        top: 91%;
     }
-
     .secundary_nav {
-        margin-left: 30%;
+        margin-left: 25%;
         margin-top: 35%;
         transform: translate(0%, 100%);
-        width: 50%;
+        width: 70%;
         vertical-align: middle;
     }
 
     .secundary_nav ul li a {
-        font-size: clamp(8px, 3vw, 23px);
+        font-size: clamp(10px, 5vw, 15px);
     }
 
     #secundary_separador {
-        height: 30%;
-        width: 40%;
+        height: 70%;
+        width: 70%;
         vertical-align: middle;
     }
 
@@ -264,4 +264,6 @@ nav .gg-menu-cake {
     #line2 {
         height: 3px;
     }
+
+
 }

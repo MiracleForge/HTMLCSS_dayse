@@ -89,5 +89,69 @@ footer {
     width: auto;  /* You can set a specific width if needed */
 }
 
+@media (max-width: 900px) {
+    footer {
+        height: 60vh;
+        position: relative;
+ 
+    }
+
+    #divisor_footer {
+        height: 5%;
+    }
+    .social_footer {
+        display: flex;
+        position: absolute;
+        margin-top: 10%;
+        margin-left: -5%;
+        height: 100%;
+        align-items: center;
+        width: 100%;
+        gap: 5%;
+    }
+
+    .social_footer h1,
+    .Atendimento h1 {
+        font-size: clamp(16px, 6vh, 60px);
+        align-items: center;
+    }
+    .social-links img {
+        height:10%;
+        display: inline-flex;
+    }
+
+    #Instagram {
+        left:30%;
+    }
+
+    #Whatsapp {
+        right: 30%;
+    }
+
+    .Atendimento {
+        justify-content: center;
+        width: 100%;
+        right: 100%;
+        margin-top: 25%;
+    }
+    .Atendimento p {
+        font-size: clamp(8px, 5vh, 18px);
+    }
+
+    .Direitos {
+        top: 80%;
+        width:80%;
+        display: flex;
+        position: absolute;
+        font-family: 'Montserrat', regular;
+        font-size: clamp(8px,3vw, 30px);
+    }
+
+    #footer_separador {
+        display: none;
+    }
+
+}
+
 
 
