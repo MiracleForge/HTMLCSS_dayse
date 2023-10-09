@@ -3,6 +3,9 @@ import Catálogo from "../pages/Catálogo/catalogo.js";
 import Orçamento from "../pages/Orçamento/orcamento.js";
 import SobreNós from "../pages/SobreNos/sobrenos.js";
 
+import { exibirmaisprocurados } from "./main.js"; 
+
+
 const main = document.querySelector("#dynamic-main");
 const removenav = document.querySelector(".secundary_nav"); 
 
@@ -13,9 +16,11 @@ const init = () => {
         switch (window.location.hash) {
             case "":
                 main.appendChild(Inicio());
+                exibirmaisprocurados();
                 break;
             case "#inicio":
                 main.appendChild(Inicio());
+                exibirmaisprocurados();
                 break;
             case "#catalogo":
                 main.appendChild(Catálogo());
@@ -28,6 +33,7 @@ const init = () => {
                 break;
             default:
                 main.appendChild(Inicio());
+                exibirmaisprocurados();
                 break;
         }
     });
@@ -49,5 +55,6 @@ function controlarNavDisplay() {
 
 window.addEventListener("load", () => {
     main.appendChild(Inicio());
+    exibirmaisprocurados();
     init();
 });

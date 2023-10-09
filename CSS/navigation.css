@@ -138,7 +138,7 @@ nav .gg-menu-cake {
 @media (max-width: 900px) {
 
     nav {
-        height: 4vh;
+        height: 10vh;
     }
 
     .navigation {
@@ -197,10 +197,8 @@ nav .gg-menu-cake {
         left: 6.2%;
         display: block;
     }
-
     .mobile-menu .gg-menu-cake::after {
         display: none;
-
     }
 
     .mobile-menu .gg-menu-cake {

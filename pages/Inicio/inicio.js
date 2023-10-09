@@ -38,6 +38,7 @@ export default () => {
     // Inclua um elemento de script para carregar o main.js
     const script = document.createElement('script');
     script.src = './js/main.js';
+    script.type = 'module';
     document.body.appendChild(script);
 
     // Após criar a estrutura de elementos e inserir no container
