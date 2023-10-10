@@ -239,6 +239,7 @@ nav .gg-menu-cake {
     .toldo-set {
         top: 91%;
     }
+
     .secundary_nav {
         margin-left: 25%;
         margin-top: 35%;
@@ -264,6 +265,10 @@ nav .gg-menu-cake {
     #line2 {
         height: 3px;
     }
+}
 
-
+@media (max-width: 900px) {
+    .secundary_nav {
+        margin-top:45%;
+    }
 }

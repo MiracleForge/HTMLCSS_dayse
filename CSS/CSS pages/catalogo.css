@@ -14,7 +14,7 @@
 .Emconstrucao h1 {
     position: absolute;
     left: 50%;
-    bottom: 80%;
+    bottom: 75%;
     transform: translate(-50%, -50%); /* Centralize vertical e horizontalmente */
 }
 
