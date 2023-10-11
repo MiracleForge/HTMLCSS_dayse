@@ -53,10 +53,6 @@ export async function exibirmaisprocurados () {
     imagem.alt = produto.nome;
     imagem.classList.add('produto-imagem');
 
-    const display = document.createElement('img');
-    display.src = produto.display;
-    display.classList.add('produto-display');
-
     const nome = document.createElement('p');
     nome.textContent = produto.nome;
     nome.classList.add('produto-nome');
@@ -68,7 +64,6 @@ export async function exibirmaisprocurados () {
     produtoDiv.appendChild(imagem);
     produtoDiv.appendChild(nome);
     produtoDiv.appendChild(valor);
-    produtoDiv.appendChild(display);
 
     listaprocuradosDiv.appendChild(produtoDiv);
 

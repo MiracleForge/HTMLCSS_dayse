@@ -42,7 +42,6 @@ const init = () => {
 // Função para controlar o display da classe removenav/ // temporaria
 function controlarNavDisplay() {
     switch (window.location.hash) {
-        case "#catalogo":
         case "#orcamento":
         case "#contact":
             removenav.style.display = "none";
